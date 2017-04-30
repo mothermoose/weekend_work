@@ -3,8 +3,20 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-
-end
+  puts "Give me a sentence"
+  sentence = gets.chomp
+  sentence_split = sentence.split 
+  p sentence_split
+  reverse_array = [] 
+  x = sentence_split.count
+  p x 
+  counter = x-1 
+  x.times do 
+    reverse_array << sentence_split[counter]
+   counter -= 1 
+   end
+ puts reverse_array 
+end 
 
 # Driver code - don't touch anything below this line.
 puts "TESTING reverse_a_string..."
